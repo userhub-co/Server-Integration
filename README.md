@@ -13,7 +13,9 @@ Every time a user clicks on a banner driving app installs for your application, 
 
 AdGoji will call your server as follows:
 
-```http://your-server.com/redirect?redirect_url=<app store url here>&request_id=<a-unique-request-id-here>&ios_ifa=<IOS ADVERTISER ID HERE>```
+<code>
+http://your-server.com/redirect?redirect_url=app_store_url_&request_id=unique_id&ios_ifa=ios_ifa
+</code>
 
 Your server needs to keep the `request_id` and `ios_ifa` id stored and redirect the request to the app store using the `redirect_url` provided in this request. As soon as the installation completes, and the user opens the app for the first time your server should call the AdGoji server with a POST request as follows:
 
