@@ -1,4 +1,4 @@
-Optional parameters that can be send in the body of a POST back request to AdGoji
+Optional parameters that can be send in the body of a POST back request to UserHub
 =================================================================================
 
 * {android_id} - A 64-bit number (as a hex string) that is randomly generated on the device's first boot and should remain constant for the lifetime of the device.
